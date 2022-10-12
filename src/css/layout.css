@@ -1,0 +1,123 @@
+body{
+    background-image : url('../imagens/fundo-site.jpg');
+    
+    }
+    
+
+
+
+
+
+
+/*                           */
+/*        PARTE DE CIMA      */
+/*                           */
+
+.cartao {
+    
+    
+
+    width: 350px;
+    padding: 20px;
+    
+    text-align: center;
+
+    border: 1px solid blueviolet;
+    background-color: beige;
+    
+}
+
+.minhas-informacoes { 
+    
+    padding: 20px;
+
+    border: 1px dashed rgb(255, 94, 0);
+
+    
+}
+
+.foto-perfil {
+    border-radius: 100%;
+}
+
+.nome {
+    font-size: 1.5em ;
+    font-family: 'VT323', monospace;
+}
+
+.cargo {
+    font-size: medium;
+}
+
+
+
+
+
+
+
+
+/*                           */
+/*        PARTE DE BAIXO     */
+/*                           */
+
+
+.conteudo {
+    
+    margin-top: 2px;
+
+
+    border: 1px solid blue;
+}
+
+
+.abas {
+    
+    padding-left: 0%;
+
+
+    text-align: center;
+
+
+    border: 1px solid black;
+
+
+    list-style: none;
+}
+
+.aba > img {
+    
+    width: 50px;
+}
+
+
+
+
+
+
+/*                           */
+/*            SOBRE          */
+/*                           */
+
+.informacoes-abas {
+    padding: 0 10px 0 10px;
+
+    border: 1px solid red;
+}
+
+.sub-titulo {
+    font-size: 22px;
+    font-family: 'VT323', monospace;
+}
+
+.descricao > p > span {
+    color: red;
+}
+
+.redes-sociais {
+   
+
+    padding-left: 0%;
+    
+    list-style: none;
+}
+
