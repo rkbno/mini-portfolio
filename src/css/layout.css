@@ -17,7 +17,7 @@ body{
     
     
 
-    width: 350px;
+    width: 21.87em;
     padding: 20px;
     
     text-align: center;
@@ -64,6 +64,7 @@ body{
 .conteudo {
     
     margin-top: 2px;
+    padding: 0 2px 2px 2px;
 
 
     border: 1px solid blue;
@@ -85,8 +86,9 @@ body{
 }
 
 .aba > img {
+    display: inline-block;
     
-    width: 50px;
+    width: 30px;
 }
 
 
@@ -99,7 +101,8 @@ body{
 /*                           */
 
 .informacoes-abas {
-    padding: 0 10px 0 10px;
+   
+   
 
     border: 1px solid red;
 }
@@ -115,9 +118,26 @@ body{
 
 .redes-sociais {
    
-
-    padding-left: 0%;
     
+    padding-left: 0%;
+    text-decoration: none;
     list-style: none;
 }
 
+.curriculo { 
+    text-decoration: none;
+  background-color: red;
+
+}
+
+.linkedin {
+    
+    text-decoration: none;
+    background-color: rgb(100, 100, 100);
+}
+
+.github { 
+    text-decoration: none;
+    background-color: green ;
+
+}
