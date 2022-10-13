@@ -1,6 +1,17 @@
 body{
-    background-image : url('../imagens/fundo-site.jpg');
+    background-image : url(../imagens/fundo-site.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     
+
+    font-family: 'VT323', monospace;
+    color: aliceblue;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
     }
     
 
@@ -15,38 +26,40 @@ body{
 
 .cartao {
     
-    
-
-    width: 21.87em;
+    width: 370px;
     padding: 20px;
+    
+    
     
     text-align: center;
 
-    border: 1px solid blueviolet;
-    background-color: beige;
+    border: 1px solid rgb(226, 43, 217);
+    border-radius: 15px;
+    background-color: rgb(12, 12, 12);
     
 }
 
 .minhas-informacoes { 
     
-    padding: 20px;
-
-    border: 1px dashed rgb(255, 94, 0);
-
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* alinha horizontalmente por causa do flex direction column */
+    gap: 10px;
 }
 
 .foto-perfil {
     border-radius: 100%;
+    border: 4px solid rgb(190, 0, 190);
 }
 
 .nome {
     font-size: 1.5em ;
-    font-family: 'VT323', monospace;
+    
 }
 
 .cargo {
     font-size: medium;
+    color: #b8bbc5;
 }
 
 
@@ -64,32 +77,45 @@ body{
 .conteudo {
     
     margin-top: 2px;
-    padding: 0 2px 2px 2px;
+    
 
-
+    background-color: red;
     border: 1px solid blue;
 }
 
 
 .abas {
+
+    display: flex;
     
-    padding-left: 0%;
 
+    
 
-    text-align: center;
-
-
-    border: 1px solid black;
-
-
-    list-style: none;
+    
 }
 
-.aba > img {
-    display: inline-block;
-    
+.abas img {
     width: 30px;
+    height: 25px;
+
 }
+
+.cartao .abas .aba {
+    width: 50%;
+    display: flex;
+    justify-content:center;
+    padding: 10px 0;
+    cursor: pointer;   
+}
+
+.cartao .abas .aba.selecionado {
+    background-color: rgb(12, 12, 12);
+
+}
+
+.cartao .informacoes-abas
+
+
 
 
 
@@ -112,6 +138,11 @@ body{
     font-family: 'VT323', monospace;
 }
 
+.descricao {
+    padding: 10px;
+}
+
+
 .descricao > p > span {
     color: red;
 }
@@ -123,6 +154,7 @@ body{
     text-decoration: none;
     list-style: none;
 }
+
 
 .curriculo { 
     text-decoration: none;
