@@ -27,7 +27,7 @@ body{
 .cartao {
     
     width: 370px;
-    padding: 20px;
+    
     
     
     
@@ -79,8 +79,8 @@ body{
     margin-top: 2px;
     
 
-    background-color: red;
-    border: 1px solid blue;
+    
+    
 }
 
 
@@ -105,15 +105,22 @@ body{
     display: flex;
     justify-content:center;
     padding: 10px 0;
-    cursor: pointer;   
+    cursor: pointer; 
+    transition: background-color 0.2s ease-in-out;  
 }
 
 .cartao .abas .aba.selecionado {
-    background-color: rgb(12, 12, 12);
+    background-color: rgb(61, 61, 61);
 
 }
 
-.cartao .informacoes-abas
+.cartao .informacoes-abas {
+    background-color: rgb(61, 61, 61);
+}
+
+.cartao .abas .aba:hover {
+    background-color: rgb(41, 41, 41);
+}
 
 
 
@@ -126,20 +133,22 @@ body{
 /*            SOBRE          */
 /*                           */
 
-.informacoes-abas {
+
+    
    
    
 
-    border: 1px solid red;
-}
+    
+
 
 .sub-titulo {
     font-size: 22px;
-    font-family: 'VT323', monospace;
+    font-family: 'vt323', monospace;
 }
 
 .descricao {
     padding: 10px;
+    
 }
 
 
