@@ -17,7 +17,7 @@ body{
 .cartao{
     background-color: #070d12;
     width: 370px;
-    border: 2px solid rgb(209, 29, 29);
+    border: 2px solid #e14226;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -32,7 +32,7 @@ body{
 
 .cartao .minhas-informacoes img{
     border-radius: 50px;
-    border: 4px solid #d49112;    
+    border: 4px solid #d07002;    
 }
 
 .cartao .minhas-informacoes .nome{
@@ -63,7 +63,6 @@ body{
 
 .cartao .abas img{
     width: 30px;
-    height: 25px;
 }
 
 .cartao .abas .aba.selecionado{
@@ -102,7 +101,7 @@ body{
 }
 
 .informacoes-abas .descricao span{
-    color: rgb(209, 29, 29);
+    color: #e14226;
 }
 
 .redes-sociais{
