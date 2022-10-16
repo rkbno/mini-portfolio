@@ -12,6 +12,34 @@ body{
     align-items: center;
     min-height: 100vh;
     padding: 30px;
+
+    }
+    
+
+
+
+
+
+
+/*                           */
+/*        PARTE DE CIMA      */
+/*                           */
+
+.cartao {
+    
+    width: 370px;
+    margin: 20px;
+    
+    
+    
+    text-align: center;
+    
+    border: 3px solid rgb(226, 141, 43);
+    
+    background-color: rgb(12, 12, 12);
+    
+    
+
 }
 
 .cartao{
@@ -30,9 +58,17 @@ body{
     gap: 10px;
 }
 
+
 .cartao .minhas-informacoes img{
     border-radius: 50px;
     border: 4px solid #02d08f;    
+
+
+.foto-de-perfil {
+    margin-top: 20px;
+    border-radius: 100%;
+    border: 4px solid rgb(243, 44, 44);
+
 }
 
 .cartao .minhas-informacoes .nome{
@@ -44,8 +80,30 @@ body{
     color: #b8bbc5;
 }
 
+
 .cartao .conteudo{
     margin-top: 15px;
+
+
+
+
+
+
+
+
+/*                           */
+/*        PARTE DE BAIXO     */
+/*                           */
+
+
+.conteudo {
+    
+    margin-top: 2px;
+    
+
+    
+    
+
 }
 
 .cartao .abas{
@@ -57,6 +115,7 @@ body{
     display: flex;
     justify-content: center;
     padding: 10px 0;
+
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
 }
@@ -67,6 +126,41 @@ body{
 
 .cartao .abas .aba.selecionado{
     background-color: #262626;
+
+    cursor: pointer; 
+    transition: background-color 0.2s ease-in-out;  
+}
+
+.cartao .abas .aba.selecionado {
+    background-color: rgb(41, 41, 41);
+
+}
+
+.cartao .informacoes-abas {
+    background-color: rgb(41, 41, 41);
+}
+
+.cartao .abas .aba:hover {
+    background-color: rgb(61, 61, 61);
+}
+
+
+
+
+
+
+
+
+/*                           */
+/*            SOBRE          */
+/*                           */
+
+.informacoes-abas .informacao {
+    
+   
+   height: 260px;
+
+    
 }
 
 .cartao .informacoes-abas{
