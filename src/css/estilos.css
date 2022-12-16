@@ -105,6 +105,10 @@ body{
     color: #e14226;
 }
 
+.informacoes-abas .descricao .ola {
+    margin-bottom: 20px;
+}
+
 .redes-sociais{
     display: flex;
     flex-direction: column;
