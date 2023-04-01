@@ -84,18 +84,11 @@ botoesCarossel.forEach ((botao, i)=> {
         marcarBotaoSelecionado(botao)
         //- passo 5 - esconder o conteúdo anterior
         esconderImagemAtiva()
-        //- passo 6 - mostrar o conteúdo da aba selecionada
-        mostrarImagemFundo(i)
-        
-
-       
-        
-        
+        //- passo 6 - mostrar a proxima imagem
+        mostrarImagem(i)   
     })
 }) 
     
- 
- 
 
 function desativarBotaoSelecionado(){
     const botaoSelecionado = document.querySelector(".on")
@@ -114,7 +107,7 @@ function desativarBotaoSelecionado(){
     imagemAtiva.classList.remove("ativa")
 }
 
-function mostrarImagemFundo(i){
+function mostrarImagem(i){
     imagens[i].classList.add("ativa")
 
 }    
