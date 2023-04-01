@@ -70,36 +70,51 @@ function mostrarInformacoesDaAba(aba){
 */
 
 
-//- passo 1 - dar um jeito de pegar os elementos que representam as imagens no HTML
-const imagens = document.querySelectorAll(".img")
-const botoes = document.querySelectorAll(".botao")
+//- passo 1 - dar um jeito de pegar os elementos que representam o carrossel no HTML
+const botoesCarossel = document.querySelectorAll(".botao")
+const imagens = document.querySelectorAll(".imagem")
 
 //- passo 2 - dar um jeito de identificar o clique no botao
-botoes.forEach((botao, i) =>  {
-    botao.addEventListener('click', function () {
+botoesCarossel.forEach ((botao, i)=> {
+    botao.addEventListener("click", function () {
+
+        // - passo 3 - quando o usuário clicar, desmarcar a seleção do botão
+        desativarBotaoSelecionado()  
+        //- passo 4 - marcar o botao clicado como selecionado
+        marcarBotaoSelecionado(botao)
+        //- passo 5 - esconder o conteúdo anterior
+        esconderImagemAtiva()
+        //- passo 6 - mostrar o conteúdo da aba selecionada
+        mostrarImagemFundo(i)
+        
+
+       
+        
+        
     })
- // - passo 3 - quando o usuário clicar, desmarcar a seleção do botão
- function desativarBotaoSelecionado(){
-    const botaoSelecionado = document.querySelector(".selecionado")
-    botaoSelecionado.classList.remove("selecionado")
- }
+}) 
+    
  
  
- 
- 
- //- passo 4 - marcar o botao clicado como selecionado
- function marcarBotaoSelecionado(botao) {
-    botao.classList.add('selecionado')
+
+function desativarBotaoSelecionado(){
+    const botaoSelecionado = document.querySelector(".on")
+    botaoSelecionado.classList.remove("on")
+  }  
+
+
+
+  function marcarBotaoSelecionado(botao){
+    botao.classList.add("on")
+  }
+
+
+  function esconderImagemAtiva(){
+    const imagemAtiva = document.querySelector(".ativa")
+    imagemAtiva.classList.remove("ativa")
 }
-//- passo 5 - esconder o conteúdo anterior
-//function esconderImagemOn() {
-  //  const imagemAtiva = document.querySelector('.on')
-    //imagemAtiva.classList.remove('on')
-//}
-//- passo 6 - mostrar o conteúdo da aba selecionada
-//function mostrarImagemFundo(img) {
-  //  imagens[img].classList.add('on')
-//}
 
+function mostrarImagemFundo(i){
+    imagens[i].classList.add("ativa")
 
-})
+}    
