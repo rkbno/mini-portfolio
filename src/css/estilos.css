@@ -1,9 +1,9 @@
 body{
-    background-image: url(https://www.imagesjunction.com/images/img/mountain_Wallpapers.jpg);
+    background-image: url(../imagens/971.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
+    
     font-family: 'VT323', monospace;
     color: #f3f3f3;
     font-size: 18px;
@@ -17,7 +17,7 @@ body{
 .cartao{
     background-color: #070d12;
     width: 370px;
-    border: 2px solid #e14226;
+    border: 2px solid #6229ff;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -32,7 +32,7 @@ body{
 
 .cartao .minhas-informacoes img{
     border-radius: 50%;
-    border: 4px solid #d07002;  
+    border: 4px solid #6229ff;  
      
 }
 
@@ -103,7 +103,7 @@ body{
 }
 
 .informacoes-abas .descricao span{
-    color: #e14226;
+    color: #6229ff;
 }
 
 .informacoes-abas .descricao .ola {
@@ -185,7 +185,7 @@ body{
 }
 
 .botao.on{
-    background-color: #e14226;
+    background-color: #6229ff;
 }
     
 .botao:hover{
