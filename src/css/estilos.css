@@ -37,11 +37,11 @@ body{
 }
 
 .cartao .minhas-informacoes .nome{
-    font-size: 26px;
+    font-size: 1.8em;
 }
 
 .cartao .minhas-informacoes .cargo{
-    font-size: 20px;
+    font-size: 1.2em;
     color: #b8bbc5;
 }
 
@@ -90,16 +90,17 @@ body{
 }
 
 .informacoes-abas .sub-titulo{
-    font-size: 22px;
+    font-size: 1.2em;
     margin-bottom: 25px;
     text-align: center;
 }
 
 .informacoes-abas .descricao{
-    font-size: 20px;
+    font-size: .9em;
     max-height: 180px;
     overflow-y: auto;
     padding-right: 15px;
+    position: relative;
 }
 
 .informacoes-abas .descricao span{
@@ -110,8 +111,12 @@ body{
     margin-bottom: 20px;
 }
 
+.carrossel, .botao-carrossel {
+    position:absolute;
+}
+
 .bTitulo {
-    font-size: 22px;
+    font-size: 1.2em;
     margin-bottom: 25px;
     text-align: center;
 }
@@ -123,7 +128,7 @@ body{
 
 
 .imagem {
-    width: 300px;
+    width: 100%;
     object-fit: cover;
     display: none;
     animation: mudarImagem 0.7s;
@@ -133,6 +138,8 @@ body{
     display: flex;
     justify-content: center;
     gap: 10px;
+    bottom: -260%;
+    left: 25%;
 }
 
 .botao {
@@ -172,7 +179,7 @@ body{
     color: #f3f3f3;
     text-align: center;
     padding: 10px;
-    font-size: 20px;
+    font-size: 1.1em;
     transition: opacity 0.3s ease-in-out;
 }
 
