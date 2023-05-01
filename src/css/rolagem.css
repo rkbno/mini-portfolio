@@ -17,3 +17,70 @@
     border-radius: 20px;
     border: 3px solid #070d12;
 }
+
+@media (max-width: 750px){
+    .cartao .minhas-informacoes .nome{
+        font-size: 2em;
+    }
+    .cartao .minhas-informacoes .cargo{
+        font-size: 1.5em;
+    }
+    .informacoes-abas .sub-titulo{
+        font-size: 1.5em;
+    }
+    .informacoes-abas .descricao{
+        font-size: 1em;
+    }
+    .bTitulo {
+        font-size: 1.5em;
+    }
+    .botao {
+        width: 25px;
+        height: 25px;
+    }
+
+}
+
+@media (max-width: 550px){
+    .cartao .minhas-informacoes .nome{
+        font-size: 2.2em;
+    }
+    .cartao .minhas-informacoes .cargo{
+        font-size: 1.8em;
+    }
+    .informacoes-abas .sub-titulo{
+        font-size: 1.8em;
+    }
+    .informacoes-abas .descricao{
+        font-size: 1.2em;
+    }
+    .bTitulo {
+        font-size: 1.5em; 
+    }
+    .botao {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 400px){
+    .cartao .minhas-informacoes .nome{
+        font-size: 2.5em;
+    }
+    .cartao .minhas-informacoes .cargo{
+        font-size: 2em;
+    }
+    .informacoes-abas .sub-titulo{
+        font-size: 2em;
+    }
+    .informacoes-abas .descricao{
+        font-size: 1.5em;
+    }
+    .bTitulo {
+        font-size: 1.3em; 
+    }
+    .botao {
+        width: 45px;
+        height: 45px;
+    }
+}
