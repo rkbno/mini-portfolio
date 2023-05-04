@@ -19,9 +19,6 @@
 }
 
 @media (max-width: 750px){
-    .cartao .minhas-informacoes .cargo{
-        font-size: 1.5em;
-    }
     .informacoes-abas .sub-titulo{
         font-size: 1.5em;
     }
@@ -39,9 +36,6 @@
 }
 
 @media (max-width: 550px){
-    .cartao .minhas-informacoes .cargo{
-        font-size: 1.8em;
-    }
     .informacoes-abas .sub-titulo{
         font-size: 1.8em;
     }
@@ -57,11 +51,7 @@
     }
 }
 
-@media (max-width: 400px){
-    
-    .cartao .minhas-informacoes .cargo{
-        font-size: 2em;
-    }
+@media (max-width: 400px){ 
     .informacoes-abas .sub-titulo{
         font-size: 2em;
     }
