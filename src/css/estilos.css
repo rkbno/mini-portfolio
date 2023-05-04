@@ -4,9 +4,9 @@ body{
     background-size: cover;
     background-position: center;
     
-    font-family: 'VT323', monospace;
+    font-family:  monospace;
     color: #f3f3f3;
-    font-size: 18px;
+    font-size: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
