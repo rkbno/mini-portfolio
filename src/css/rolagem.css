@@ -26,7 +26,7 @@
         font-size: 1em;
     }
     .bTitulo {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
     .botao {
         width: 25px;
@@ -35,32 +35,8 @@
 
 }
 
-@media (max-width: 550px){
-    .informacoes-abas .sub-titulo{
-        font-size: 1.8em;
-    }
-    .informacoes-abas .descricao{
-        font-size: 1.2em;
-    }
-    .bTitulo {
-        font-size: 1.5em; 
-    }
-    .botao {
-        width: 30px;
-        height: 30px;
-    }
-}
-
 @media (max-width: 400px){ 
-    .informacoes-abas .sub-titulo{
-        font-size: 2em;
-    }
-    .informacoes-abas .descricao{
-        font-size: 1.5em;
-    }
-    .bTitulo {
-        font-size: 1.3em; 
-    }
+   
     .botao {
         width: 45px;
         height: 45px;
