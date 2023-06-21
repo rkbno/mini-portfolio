@@ -201,3 +201,15 @@ body{
 .redes-sociais .github{
     background-color: #545454;
 }
+
+bloco {
+    position: absolute;
+    top: 55%;
+    left: 70%;
+    width: 20%;
+    height: 25%;
+    background-color: #f3f3f3;
+    opacity: 0;
+    color: black;
+    padding: 20px;
+}
