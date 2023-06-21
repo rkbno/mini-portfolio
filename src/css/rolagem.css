@@ -34,13 +34,11 @@
     }
     .bloco p {
         font-size: 2vw;
-        
     }
 
 }
 
 @media (max-width: 400px){ 
-   
     .botao {
         width: 45px;
         height: 45px;

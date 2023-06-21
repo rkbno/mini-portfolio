@@ -206,8 +206,7 @@ body{
     position: absolute;
     top: 55%;
     left: 65%;
-    width: 30%;
-    height: 25%;
+    max-width: 30%;
     background-color: white;
     opacity: 0;
     color: black;
@@ -215,5 +214,7 @@ body{
 }
 
 .bloco p {
+    
+    line-height: 18px;
     font-size: 1vw;
 }
