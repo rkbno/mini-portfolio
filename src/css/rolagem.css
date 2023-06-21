@@ -32,6 +32,10 @@
         width: 25px;
         height: 25px;
     }
+    .bloco p {
+        font-size: 2vw;
+        
+    }
 
 }
 

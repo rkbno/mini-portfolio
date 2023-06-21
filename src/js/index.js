@@ -109,5 +109,47 @@ function desativarBotaoSelecionado(){
 
 function mostrarImagem(i){
     imagens[i].classList.add("ativa")
-
 }    
+
+// OBEJETIVO: mostrar uma mensagem quando o mouse passar por cima da imagem 
+
+// chamar o bloco
+const bloco = document.querySelector('.bloco')
+const p = document.querySelector('.paragrafo')
+
+// 1 - criação do forEach
+imagens.forEach((element, index)=>{
+    // 2 - quando passa o mouse por cima da imagem mostra um bloco com uma mensagem
+    element.addEventListener('mouseover', ()=>{
+        // 3 - mostrar a mensagem de cada imagem
+        mostrarMensagem(index);
+    });
+    // 4 - quando o mouse sair de cima da imagem ocultar a mensagem e o bloco 
+    element.addEventListener('mouseout', () => {
+        ocultarMensagem();
+    });
+});
+// 4 - criação da função mostrarMensagem chamada
+function mostrarMensagem(index){
+    // 5 - chamar o bloco da mensagem 
+    const mensagens = [
+        'Como jogar: clicando em 1 carta, ela irá virar, ache a combinação dessa carta e curta o video de backgroud, o jogo foi desenvolvido em HTML, CSS, JavaScript e BootStrap.',
+
+        'Um Web site que fiz em homenagem ao meu héroi de infância, desenvolvido em HTML, CSS e JavaScript.',
+
+        'Na minha opinião uma das melhores séries já feitas, desenvolvido em HTML, CSS e JavaScript.',
+
+        'Site criado como freelancer, fiz ele totalmente do zero, sem nem mesmo pegar referencia na internet, desenvolvido em HTML, CSS e JavaScript.',
+    ];
+    
+    // 6 - fazer o bloco ficar visivel
+    bloco.style.opacity = '70%';
+    // 7 - adicionar a mensagem dentro do bloco 
+    p.innerHTML = mensagens[index];
+};
+
+// 7 - criação da função de ocultarMensagem chamada
+function ocultarMensagem(){
+    bloco.style.opacity = '0';
+};
+

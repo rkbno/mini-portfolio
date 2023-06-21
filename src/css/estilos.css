@@ -202,14 +202,18 @@ body{
     background-color: #545454;
 }
 
-bloco {
+.bloco {
     position: absolute;
     top: 55%;
-    left: 70%;
-    width: 20%;
+    left: 65%;
+    width: 30%;
     height: 25%;
-    background-color: #f3f3f3;
+    background-color: white;
     opacity: 0;
     color: black;
     padding: 20px;
+}
+
+.bloco p {
+    font-size: 1vw;
 }
