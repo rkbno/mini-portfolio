@@ -14,6 +14,7 @@ body{
     min-height: 100vh;
     padding: 30px;
     line-height: 15px;
+    margin: 0;
 }
 
 .cartao{
@@ -216,14 +217,11 @@ body{
 }
 
 .bloco p {
-    
     line-height: 18px;
     font-size: 1vw;
 }
 
 .btn {
-    
-    
     max-width: 150px;
     height: 30px;
     padding: 0 10px 0 10px;
@@ -241,3 +239,12 @@ body{
     opacity: 1;
     transform: scale(1.1);
 }
+
+ .contaner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 1000vw;
+}
+
