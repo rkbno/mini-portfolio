@@ -153,3 +153,20 @@ function ocultarMensagem(){
     bloco.style.opacity = '0';
 };
 
+// OBJETIVO: fazer que o cartao fique ocultado e sera mostrado somente depois que clicar no botao 
+// 1 - chamar o botao e o cartão
+const btn = document.querySelector('.btn');
+const card = document.querySelector('.cartao');
+// 2 - quando clicar no botão fazer ele executar uma ação 
+btn.addEventListener('click', handClick)
+    function handClick()  {
+        card.style.opacity = '1';
+        card.style.transition = '2s ease-in-out';
+        document.body.style.backgroundImage = 'url(https://img.freepik.com/vector-gratis/computadora-portatil-icono-isometrico-codigo-programa-desarrollo-software-aplicaciones-programacion-neon-oscuro_39422-971.jpg?w=740&t=st=1687397905~exp=1687398505~hmac=0f96caf0031f9c32a7dc8410ed1cde4a7ff4572da694b942e7b5cf01161c29a4'
+        btn.remove();
+    }
+    
+
+
+
+
