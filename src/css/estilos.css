@@ -215,6 +215,7 @@ body{
     opacity: 0;
     color: black;
     padding: 20px;
+    transition: 500ms ease-in-out;
 }
 
 .bloco p {
