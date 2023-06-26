@@ -161,7 +161,7 @@ const cont = document.querySelector('.contaner')
 const btnWrapper = document.querySelector('.btn-wrapper')
 // 2 - quando clicar no botão fazer ele executar a ação de mostrar o card e modificar o backgroud
 btn.addEventListener('click', handClick)
-btn.style.fontFamily = 'Press Start 2P, Arial, Helvetica, sans-serif;'
+btn.style.fontFamily =  'Press Start 2P', 'Arial';
     function handClick()  {
         btn.remove();
         cont.style.width = '0';
