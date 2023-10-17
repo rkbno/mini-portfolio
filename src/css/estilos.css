@@ -1,5 +1,5 @@
 body{
-    background-image: url(../imagens/javascript.webp);
+    background-image: url(../imagens/fundo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -23,7 +23,7 @@ body{
     border: 2px solid #6229ff;
     border-radius: 10px;
     overflow: hidden;
-    display: none;
+    
 }
 
 

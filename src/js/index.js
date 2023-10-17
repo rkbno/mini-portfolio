@@ -153,22 +153,7 @@ function ocultarMensagem(){
     bloco.style.opacity = '0';
 };
 
-// OBJETIVO: fazer que o card suma e o background, voltar somente depois que clicar no btn 
-// 1 - chamar os objetos que irie usar para fazer o cartão aparecer 
-const btn = document.querySelector('.btn');
-const card = document.querySelector('.cartao');
-const cont = document.querySelector('.contaner')
-const btnWrapper = document.querySelector('.btn-wrapper')
-// 2 - quando clicar no botão fazer ele executar a ação de mostrar o card e modificar o backgroud
-btn.addEventListener('click', handClick)
-btn.style.fontFamily =  'Press Start 2P';
-    function handClick()  {
-        btn.remove();
-        cont.style.width = '0';
-        card.style.display = 'block';
-        document.body.style.backgroundImage = 'url(https://img.freepik.com/vector-gratis/computadora-portatil-icono-isometrico-codigo-programa-desarrollo-software-aplicaciones-programacion-neon-oscuro_39422-971.jpg?w=740&t=st=1687397905~exp=1687398505~hmac=0f96caf0031f9c32a7dc8410ed1cde4a7ff4572da694b942e7b5cf01161c29a4'
-    };
-    
+
 
 
 
