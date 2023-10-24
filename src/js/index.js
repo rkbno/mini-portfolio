@@ -133,7 +133,7 @@ imagens.forEach((element, index)=>{
 function mostrarMensagem(index){
     // 5 - chamar o bloco da mensagem 
     const mensagens = [
-        'Como jogar: clicando em 1 carta, ela irá virar, ache a combinação dessa carta e curta o video de backgroud, o jogo foi desenvolvido em HTML, CSS, JavaScript e BootStrap.',
+        'Como jogar: (JOGO DA MEMÓRIA) clicando em 1 carta, ela irá virar, ache a combinação dessa carta e acerte, curta o video de backgroud depois que finalizar, o jogo foi desenvolvido em HTML, CSS E JavaScript.',
 
         'Um Web site que fiz em homenagem ao meu héroi de infância, desenvolvido em HTML, CSS e JavaScript.',
 
