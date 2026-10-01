@@ -1,143 +1,154 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="src/imagens/favicon.ico" type="image/x-icon">
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breno Teixeira Martins | Desenvolvedor Frontend</title>
+  <meta name="description" content="Portfólio de Breno Teixeira Martins, desenvolvedor frontend. Sites responsivos e acessíveis com HTML, CSS e JavaScript.">
+  <meta property="og:title" content="Breno Teixeira Martins | Desenvolvedor Frontend">
+  <meta property="og:description" content="Sites responsivos e acessíveis com HTML, CSS e JavaScript. Veja meus projetos.">
+  <meta property="og:image" content="src/imagens/breno.webp">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+  <header class="topo">
+    <a class="logo" href="#inicio">Breno Teixeira Martins</a>
+    <nav aria-label="Principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#skills">Skills</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
 
-
-    <meta name="description" content="Explore meu portfolio de Front End e descubra como minhas habilidades em HTML, CSS, JavaScript e outras tecnologias podem transformar sua presença online. Veja projetos criativos e responsivos que mostram minha paixão por design e desenvolvimento web de alta qualidade.">
-    
-    <link rel="shortcut icon" href="src/imagens/favicon.ico" type="image/x-icon" style="border-radius: 50px;">
-
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/estilos.css">
-    <link rel="stylesheet" href="./src/css/rolagem.css">
-
-    <title>Mini Portfólio</title>
-  </head>
-
-  
-  <body>
-    
-
-    <main class="cartao">
-      <div class="minhas-informacoes">
-        <img src="./src/imagens/breno.webp" width="150px" alt="foto de perfil" />
-        <h1 class="nome">Breno Teixeira Martins</h1>
-        <h2 class="cargo">Desenvolvedor Frontend</h2>
-      </div>
-
-      <div class="conteudo">
-        <ul class="abas">
-          <li class="aba selecionado" id="sobre-mim">
-            <img src="./src/imagens/sobre.gif" width="30px" height="25px" alt="ícone de sobre mim" />
-          </li>
-          <li class="aba" id="minhas-redes">
-            <img src="./src/imagens/coracao.gif" width="30px" height="25px" alt="ícone de redes sociais" />
-          </li>
-        </ul>
-
-        <div class="informacoes-abas">
-          <div class="informacao selecionado" id="informacao-sobre-mim">
-            <h3 class="sub-titulo">Sobre</h3>
-
-            <div class="descricao">
-              <p class="ola">Profissional com 25 anos, residente em Cariacica – ES, com formação de nível médio completo e formação em Segurança da Informação (atualmente trancada). Possui sólida base em desenvolvimento web, com domínio em HTML5, CSS3, Bootstrap 5, WordPress e JavaScript, além de estar em constante evolução técnica nas áreas de MySQL, Node.js, Python e jQuery.               
-              </p>
-              
-          
-            
-              <p class="ola">Destaca-se pela capacidade de comunicação e relacionamento interpessoal, com experiência prática no atendimento ao público e foco na criação de conexões com clientes, agregando valor tanto em ambientes tecnológicos quanto comerciais.
-              </p>
-              
-              
-              <p class="ola">
-                Perfil proativo, disciplinado e orientado ao aprendizado contínuo, com facilidade de adaptação e forte comprometimento com resultados.
-              </p>
-              
-              
-              <div>
-                <h2 class="bTitulo">Skills</h2>
-
-                <img class="skills-img" src="https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript" alt="logo javascript">
-                
-                <img class="skills-img" src="https://img.shields.io/badge/-Node.JS-05122A?style=flat&logo=node.js" alt="logo javascript">
-                
-                <img src="https://img.shields.io/badge/-Linux-05122A?style=flat&logo=linux" alt="logo linux"class="skills-img">
-
-                <img src="https://img.shields.io/badge/-WordPress-05122A?style=flat&logo=wordpress" alt="logo linux"class="skills-img">
-                
-                <img src="https://img.shields.io/badge/-GIMP-05122A?style=flat&logo=gimp" alt="logo GIMP" class="skills-img">
-
-                <img src="https://img.shields.io/badge/-VS%20Code-05122A?style=flat&logo=visual-studio-code&logoColor=007ACC" alt="logo vs visual studio code" class="skills-img">
-                
-                <img src="https://img.shields.io/badge/-CSS-05122A?style=flat&logo=CSS3&logoColor=1572B6" alt="logo CSS3" class="skills-img">
-
-                <img src="https://img.shields.io/badge/-Bootstrap-05122A?style=flat&logo=bootstrap" alt="logo BootStrap 5" class="skills-img">
-
-                <img src="https://img.shields.io/badge/-MySQL-05122A?style=flat&logo=mysql" alt="logo MySQL" class="skills-img">
-                
-                <img src="https://img.shields.io/badge/-HTML-05122A?style=flat&logo=HTML5" alt="logo HTML5" class="skills-img">
-
-                             
-              </div>
-
-              
-              
-                <h2 class="bTitulo project">My Projects</h2>
-              <div class="carrossel">
-              <div class="bloco"><p class="paragrafo"></p></div>
-                <a href="https://memorygame-rkbno.netlify.app/" target="_blank">
-                  <img class="imagem ativa" src="src/imagens/projeto-memorygame.webp" alt="projeto-jogo da memoria">
-                </a>
-                
-                <a href="https://kick-rkbno.netlify.app/" target="_blank">
-                  <img class="imagem" src="src/imagens/projeto-kick.webp" alt="projeto-kick">
-                </a>
-
-                <a href="https://supernatural-rkbno.netlify.app/" target="_blank">
-                  <img class="imagem" src="src/imagens/projeto-spn.webp" alt="projeto-supernatural">
-                </a>
-
-                 <a href="https://butecando.netlify.app/" target="_blank">
-                  <img class="imagem" src="src/imagens/butecando.png" alt="projeto-loja de biquines">
-                </a>
-              </div>
-
-              <div class="botao-carrossel">
-                <button class="botao on"></button>
-                <button class="botao"></button>
-                <button class="botao"></button>
-                <button class="botao"></button>
-              </div>
-            </div>
-          </div>
-
-          <div class="informacao" id="informacao-minhas-redes">
-            <h3 class="sub-titulo">Minhas redes</h3>
-
-            <ul class="redes-sociais">
-                <li>
-                    <a href="/src/imagens/BRENO TEIXEIRA MARTINS.pdf" target="_blank" class="curriculo">Currículo</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/breno-developer/" target="_blank" class="linkedin">LinkedIn</a>
-                </li>
-                <li>
-                    <a href="https://github.com/rkbno" target="_blank" class="github">GitHub</a>
-                </li>
-            </ul>
-          </div>
-
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-texto">
+        <h1>Breno Teixeira Martins</h1>
+        <p class="cargo">Desenvolvedor Frontend</p>
+        <p class="resumo">Crio sites responsivos, rápidos e fáceis de usar, com HTML, CSS e JavaScript. Busco minha oportunidade para crescer em um time de desenvolvimento.</p>
+        <div class="botoes">
+          <a class="btn btn-primario" href="#projetos">Ver projetos</a>
+          <a class="btn" href="src/imagens/Curriculo do Breno.docx.pdf" target="_blank" rel="noopener">Ver currículo</a>
         </div>
       </div>
-    </main>
+      <div class="foto">
+        <img src="src/imagens/breno.webp" alt="Foto de Breno Teixeira Martins" width="360" height="360">
+      </div>
+    </section>
 
-    <script src="./src/js/index.js"></script>
-  </body>
+    <section class="secao" id="sobre">
+      <h2>Sobre</h2>
+      <div class="texto-largo">
+        <p>Sou desenvolvedor frontend com base sólida em HTML5, CSS3, Bootstrap 5, WordPress e JavaScript. Hoje estudo MySQL, Node.js, Python e jQuery para ampliar o que consigo entregar.</p>
+        <p>Tenho formação em Segurança da Informação e experiência no atendimento ao público, o que me ajuda a entender o que o cliente precisa e a explicar decisões técnicas de forma simples.</p>
+        <p>Sou disciplinado, aprendo rápido e gosto de entregar resultado. Moro no Espírito Santo e estou aberto a oportunidades presenciais, híbridas e remotas.</p>
+      </div>
+    </section>
+
+    <section class="secao" id="skills">
+      <h2>Skills</h2>
+      <div class="grupos">
+        <div>
+          <h3>Frontend</h3>
+          <ul class="chips"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>TypeScript</li><li>Bootstrap 5</li><li>Design responsivo</li></ul>
+        </div>
+        <div>
+          <h3>Backend e banco de dados</h3>
+          <ul class="chips"><li>Node.js</li><li>MySQL</li><li>WordPress</li></ul>
+        </div>
+        <div>
+          <h3>Ferramentas</h3>
+          <ul class="chips"><li>Git e GitHub</li><li>VS Code</li><li>Linux</li><li>GIMP</li></ul>
+        </div>
+        <div>
+          <h3>Estudando agora</h3>
+          <ul class="chips chips-estudo"><li>Python</li><li>jQuery</li><li>TypeScript</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="projetos">
+      <h2>Projetos</h2>
+      <!-- Edite as descrições com o que cada projeto realmente faz. As imagens do Outlet e da Casa na Árvore vêm dos próprios sites: troque por prints salvos em src/imagens/ -->
+      <div class="projetos">
+        <article class="projeto">
+          <img src="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/lovp_65pvffp77r9fj9773qq5py53n2/c99b2210111d91cccb5f564aab7f852d_1790814034687.png" alt="Tela do site Outlet Capixaba" loading="lazy">
+          <div class="projeto-info">
+            <h3>Outlet Capixaba</h3>
+            <p>Site de um outlet multimarcas com catálogo por setores e botão de compra que abre o WhatsApp da loja já com o produto na mensagem.</p>
+            <ul class="chips"><li>Lovable</li><li>WhatsApp</li><li>Design responsivo</li></ul>
+            <p class="links"><a href="https://outletcapixaba.lovable.app/" target="_blank" rel="noopener">Ver site</a></p>
+          </div>
+        </article>
+        <article class="projeto">
+          <img src="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/lovp_7fmnsf3878837s7b5a15671rfp/3d93642347929754d0f32c407ac008df_1790884498272.png" alt="Tela do site Casa na Árvore Arquitetura" loading="lazy">
+          <div class="projeto-info">
+            <h3>Casa na Árvore Arquitetura</h3>
+            <p>Site institucional de uma marca de arquitetura e bioconstrução, com conceitos, projeto executado, página sobre a projetista e pedido de orçamento.</p>
+            <ul class="chips"><li>Lovable</li><li>Site institucional</li><li>UX</li></ul>
+            <p class="links"><a href="https://casanaarvore.lovable.app/" target="_blank" rel="noopener">Ver site</a></p>
+          </div>
+        </article>
+        <article class="projeto">
+          <img src="src/imagens/butecando.png" alt="Tela do site da antiga lanchonete" loading="lazy">
+          <div class="projeto-info">
+            <h3>Butecando</h3>
+            <p>Site da minha antiga empresa de lanches, feito para apresentar o cardápio e facilitar o contato com os clientes.</p>
+            <ul class="chips"><li>HTML</li><li>CSS</li><li>Bootstrap</li></ul>
+            <p class="links"><a href="https://butecando.netlify.app/" target="_blank" rel="noopener">Ver site</a> <a href="https://github.com/rkbno" target="_blank" rel="noopener">Código</a></p>
+          </div>
+        </article>
+        <article class="projeto">
+          <img src="src/imagens/projeto-memorygame.webp" alt="Tela do jogo da memória" loading="lazy">
+          <div class="projeto-info">
+            <h3>Jogo da memória</h3>
+            <p>Jogo de cartas com contagem de jogadas e reinício da partida, feito com JavaScript puro.</p>
+            <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <p class="links"><a href="https://memorygame-rkbno.netlify.app/" target="_blank" rel="noopener">Ver site</a> <a href="https://github.com/rkbno" target="_blank" rel="noopener">Código</a></p>
+          </div>
+        </article>
+        <article class="projeto">
+          <img src="src/imagens/projeto-kick.webp" alt="Tela do projeto Kick" loading="lazy">
+          <div class="projeto-info">
+            <h3>Kick</h3>
+            <p>Página de produto com seções de destaque e layout responsivo.</p>
+            <ul class="chips"><li>HTML</li><li>CSS</li></ul>
+            <p class="links"><a href="https://kick-rkbno.netlify.app/" target="_blank" rel="noopener">Ver site</a> <a href="https://github.com/rkbno" target="_blank" rel="noopener">Código</a></p>
+          </div>
+        </article>
+        <article class="projeto">
+          <img src="src/imagens/projeto-spn.webp" alt="Tela do site sobre Supernatural" loading="lazy">
+          <div class="projeto-info">
+            <h3>Supernatural</h3>
+            <p>Site de fã da série, usado para praticar layout e estilização.</p>
+            <ul class="chips"><li>HTML</li><li>CSS</li></ul>
+            <p class="links"><a href="https://supernatural-rkbno.netlify.app/" target="_blank" rel="noopener">Ver site</a> <a href="https://github.com/rkbno" target="_blank" rel="noopener">Código</a></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao contato" id="contato">
+      <h2>Contato</h2>
+      <p class="texto-largo">Quer conversar sobre uma vaga ou um projeto? Me chame por um dos canais abaixo.</p>
+      <ul class="redes">
+        <li><a href="mailto:brenotm10@gmail.com">brenotm10@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/breno-developer/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/rkbno" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://docs.google.com/document/d/13H7rlayEsKiOMaOKc5ULiuqvyMwO3g7k/edit" target="_blank" rel="noopener">Currículo</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>&copy; <span id="ano">2026</span> Breno Teixeira Martins</p>
+  </footer>
+
+  <script src="src/js/script.js"></script>
+</body>
 </html>

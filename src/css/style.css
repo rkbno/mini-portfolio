@@ -1,0 +1,126 @@
+:root {
+  --fundo: #f5f7fa;
+  --superficie: #ffffff;
+  --tinta: #0a1b3d;
+  --suave: #4b5878;
+  --linha: #d9dfeb;
+  --destaque: #2447f5;
+  --destaque-texto: #ffffff;
+  --titulo: "Bricolage Grotesque", system-ui, sans-serif;
+  --corpo: "IBM Plex Sans", system-ui, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fundo: #07112a;
+    --superficie: #0e1c3d;
+    --tinta: #eef2fb;
+    --suave: #a8b4d0;
+    --linha: #23325a;
+    --destaque: #6f8cff;
+    --destaque-texto: #07112a;
+  }
+}
+
+* { box-sizing: border-box; margin: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  background: var(--fundo);
+  color: var(--tinta);
+  font: 400 1.0625rem/1.65 var(--corpo);
+}
+
+a { color: var(--destaque); }
+:focus-visible { outline: 3px solid var(--destaque); outline-offset: 3px; }
+
+h1, h2, h3 { font-family: var(--titulo); line-height: 1.1; }
+
+/* Topo */
+.topo {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap;
+  padding: 0.9rem clamp(1rem, 5vw, 4rem);
+  background: var(--fundo);
+  border-bottom: 1px solid var(--linha);
+}
+.logo { font: 800 1.1rem var(--titulo); color: var(--tinta); text-decoration: none; }
+.topo nav { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+.topo nav a { color: var(--suave); text-decoration: none; font-weight: 500; }
+.topo nav a:hover { color: var(--destaque); }
+
+/* Hero */
+.hero {
+  display: grid; grid-template-columns: 1.4fr 1fr; align-items: center; gap: 3rem;
+  max-width: 72rem; margin: 0 auto;
+  padding: clamp(3rem, 8vw, 6rem) clamp(1rem, 5vw, 4rem);
+}
+.hero h1 { font-size: clamp(2.8rem, 8vw, 5.5rem); font-weight: 800; letter-spacing: -0.03em; }
+.cargo { margin-top: 1rem; font: 500 1.5rem var(--titulo); color: var(--destaque); }
+.resumo { margin-top: 1.25rem; max-width: 36rem; color: var(--suave); font-size: 1.15rem; }
+.botoes { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 2rem; }
+
+.btn {
+  display: inline-block; padding: 0.8rem 1.4rem;
+  border: 2px solid var(--tinta); border-radius: 0.5rem;
+  color: var(--tinta); font-weight: 500; text-decoration: none;
+}
+.btn:hover { background: var(--tinta); color: var(--fundo); }
+.btn-primario { background: var(--destaque); border-color: var(--destaque); color: var(--destaque-texto); }
+.btn-primario:hover { background: var(--tinta); border-color: var(--tinta); color: var(--fundo); }
+
+/* A foto com bloco deslocado é o elemento de destaque da página */
+.foto { position: relative; justify-self: center; width: min(100%, 22rem); }
+.foto::before {
+  content: ""; position: absolute; inset: 1.25rem -1.25rem -1.25rem 1.25rem;
+  background: var(--destaque); border-radius: 0.5rem;
+}
+.foto img {
+  position: relative; display: block; width: 100%; height: auto; aspect-ratio: 1;
+  object-fit: cover; object-position: center 25%; border-radius: 0.5rem; border: 3px solid var(--fundo);
+}
+
+/* Seções */
+.secao {
+  max-width: 72rem; margin: 0 auto;
+  padding: clamp(2.5rem, 6vw, 4.5rem) clamp(1rem, 5vw, 4rem);
+  border-top: 1px solid var(--linha);
+}
+.secao h2 { font-size: clamp(1.9rem, 4vw, 2.6rem); margin-bottom: 1.5rem; letter-spacing: -0.02em; }
+.texto-largo { max-width: 42rem; }
+.texto-largo p + p { margin-top: 1rem; }
+
+/* Skills */
+.grupos { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 2rem; }
+.grupos h3 { font-size: 1.1rem; margin-bottom: 0.75rem; }
+.chips { display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 0; list-style: none; }
+.chips li {
+  padding: 0.25rem 0.75rem; font-size: 0.95rem;
+  border: 1px solid var(--linha); border-radius: 999px; background: var(--superficie);
+}
+.chips-estudo li { border-style: dashed; color: var(--suave); }
+
+/* Projetos */
+.projetos { display: grid; grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr)); gap: 1.75rem; }
+.projeto {
+  display: flex; flex-direction: column; overflow: hidden;
+  background: var(--superficie); border: 1px solid var(--linha); border-radius: 0.75rem;
+}
+.projeto img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; border-bottom: 1px solid var(--linha); }
+.projeto-info { display: flex; flex-direction: column; gap: 0.75rem; padding: 1.25rem; flex: 1; }
+.projeto-info h3 { font-size: 1.35rem; }
+.projeto-info > p { color: var(--suave); }
+.links { margin-top: auto; display: flex; gap: 1.25rem; font-weight: 500; }
+
+/* Contato */
+.redes { display: flex; flex-wrap: wrap; gap: 0.75rem 2rem; margin-top: 1.5rem; padding: 0; list-style: none; font-size: 1.1rem; }
+
+/* Rodapé */
+.rodape { padding: 2rem; text-align: center; color: var(--suave); border-top: 1px solid var(--linha); font-size: 0.95rem; }
+
+/* Celular */
+@media (max-width: 760px) {
+  .hero { grid-template-columns: 1fr; gap: 3rem; }
+  .foto { order: -1; width: min(70%, 16rem); justify-self: start; }
+}
