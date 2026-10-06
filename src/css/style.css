@@ -155,3 +155,13 @@ h1, h2, h3 { font-family: var(--titulo); line-height: 1.1; }
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
 }
 .whats-flutuante:hover { background: #07112a; }
+
+/* Faixa de chamada para ação */
+.cta-faixa { text-align: center; }
+.cta-faixa p { max-width: 36rem; margin: 0 auto 1.25rem; color: var(--suave); }
+
+/* Projetos de estudo recolhidos */
+.estudo { margin-top: 2.5rem; border-top: 1px solid var(--linha); padding-top: 1.25rem; }
+.estudo summary { cursor: pointer; font-weight: 500; color: var(--suave); }
+.estudo summary:hover { color: var(--destaque); }
+.estudo[open] summary { margin-bottom: 1.5rem; }
