@@ -124,3 +124,34 @@ h1, h2, h3 { font-family: var(--titulo); line-height: 1.1; }
   .hero { grid-template-columns: 1fr; gap: 3rem; }
   .foto { order: -1; width: min(70%, 16rem); justify-self: start; }
 }
+
+/* Topo com mensagem de venda */
+.hero h1 { font-size: clamp(2rem, 5vw, 3.4rem); max-width: 22ch; }
+.cargo { font-size: 1.2rem; }
+
+/* Botão do WhatsApp */
+.btn-whats { background: #2447f5; border-color: #2447f5; color: #ffffff; }
+.btn-whats:hover { background: var(--tinta); border-color: var(--tinta); color: var(--fundo); }
+
+/* O que eu faço */
+.cards-servicos { display: grid; grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); gap: 1.5rem; }
+.card-servico { padding: 1.5rem; background: var(--superficie); border: 1px solid var(--linha); border-radius: 0.75rem; }
+.card-servico h3 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+.card-servico p { color: var(--suave); }
+.card-servico ul { margin: 1rem 0 0; padding-left: 1.2rem; }
+.card-servico li + li { margin-top: 0.4rem; }
+
+/* Como funciona */
+.passos { max-width: 42rem; margin: 0; padding-left: 1.4rem; }
+.passos li { padding-left: 0.4rem; }
+.passos li + li { margin-top: 1rem; }
+
+/* Botão flutuante */
+.whats-flutuante {
+  position: fixed; z-index: 20;
+  right: 1rem; bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+  padding: 0.8rem 1.2rem; border-radius: 999px;
+  background: #2447f5; color: #ffffff; font-weight: 500; text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+.whats-flutuante:hover { background: #07112a; }
